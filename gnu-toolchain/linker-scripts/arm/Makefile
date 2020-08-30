@@ -14,5 +14,9 @@ all: add.o
 add.o:
 	@${as} -o add.o add.S
 
+flash:
+	dd if=/dev/zero of=flash.bin bs=4096 count=4096
+	dd if=add.bin of=flash.bin bs=4096 conv=notrunc
+
 clean:
 	@rm -f add.bin add.elf add.o
