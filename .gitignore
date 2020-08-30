@@ -3,3 +3,5 @@
 *.o
 *.efi
 *.elf
+a.out
+cmake-build-*
