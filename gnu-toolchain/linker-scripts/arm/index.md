@@ -6,3 +6,9 @@ https://developer.arm.com/tools-and-software/open-source-software/developer-tool
 ```bash
 export PATH=/path/to/arm-none-eabi/bin:$PATH
 ```
+
+## Usage
+
+```bash
+qemu-system-arm -M connex -pflash flash.bin -nographic -serial none
+```
