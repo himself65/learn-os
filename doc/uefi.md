@@ -20,6 +20,41 @@
 `AllocateAnyPages` 的分配类型使用起来是安全的，并且增加了UEFI驱动程序在不同平台上的兼容性。
 `AllocateMaxAddress` 和 `AllocateAddress` 的分配类型可能会降低平台兼容性，因此不鼓励使用它们。
 
+**注意**：尽管分配服务允许特定的内存分配，但不要在UEFI驱动程序中分配特定的地址。
+在特定地址分配缓冲区可能会导致错误，包括某些平台上的灾难性故障。
+`UEFI驱动` 中的内存分配应该是动态的。
+
+**提示**：在访问分配的缓冲区之前，请务必要检查函数的返回状态，确定内存分配请求是否成功。
+
+例：
+```c
+#include <Uefi.h>
+#include <Library/UefiBootServicesTableLib.h>
+
+EFI_STATUS Status;
+EXAMPLE_DEVICE *Device;
+
+//
+// Allocate a buffer for a data structure
+//
+Status = gBS->AllocatePool (
+                EfiBootServicesData,
+                sizeof (EXAMPLE_DEVICE),
+                (VOID **)&Device
+                );
+if (EFI_ERROR (Status)) {
+  return Status;
+}
+
+//
+// Free the allocated buffer
+//
+Status = gBS->FreePool (Device);
+if (EFI_ERROR (Status)) {
+  return Status;
+}
+```
+
 ### Handles
 
 ### Images
