@@ -5,3 +5,7 @@
 *.elf
 a.out
 cmake-build-*
+
+# outputs in examples
+target
+out
