@@ -1,7 +1,7 @@
 CC			:= gcc
 EXAMPLE-DIR	:= ./examples
 DIRS		:= \
-	$(EXAMPLE-DIR)/makefile/01-basic
+	$(EXAMPLE-DIR)/makefile/01-hello-world
 
 all: test-example
 
