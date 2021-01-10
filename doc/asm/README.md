@@ -67,13 +67,19 @@ add eax, 6  ; 将 6 与 eax 寄存器的内容相加，结果保存在其中
 
 当然，那篇文章已经是近乎八十年前的东西了。我们如何在现代的操作系统中模拟一套汇编语言的环境，体验上世纪程序员直接读取内存的体验呢？
 
-## 1.4 QEMU  —— 虚拟化计算机
+## 1.4 QEMU —— 虚拟化计算机
 
-类似 Apple M1 芯片下的[`Rosetta 2`]，[`QEMU`] 是一个开源软件，其专门模拟许多架构（例如本章节使用的 `x86` 架构）到其他架构的电脑上。
+类似 Apple M1 芯片下的 [`Rosetta 2`]，[`QEMU`] 是一个开源软件，其专门模拟许多架构（例如本章节使用的 `x86` 架构）到其他架构的电脑上。
 
 ## 1.5 X86遗产 —— 8086 通用处理器
 
 ![8086处理器引脚](../../images/intel-8086.jfif)
+
+## 1.6 用什么编辑器来写汇编？
+
+笔者使用 `Visual Studio Code`，下载插件 [`x86 and x86_64 Assembly`] 后即可高亮 `nasm` 格式的代码文件
+
+![NASM代码文件在 VS Code 下的高亮](../../images/vscode-nasm-highlight.png)
 
 [`NASM`]: https://www.nasm.us/
 
@@ -86,3 +92,5 @@ add eax, 6  ; 将 6 与 eax 寄存器的内容相加，结果保存在其中
 [`Rosetta 2`]: https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment
 
 [`QEMU`]: https://www.qemu.org/
+
+[`x86 and x86_64 Assembly`]: https://marketplace.visualstudio.com/items?itemName=13xforever.language-x86-64-assembly
