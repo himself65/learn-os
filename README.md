@@ -43,4 +43,4 @@ DISTRIB_DESCRIPTION="Ubuntu 20.04.1 LTS"
   - [Linux 实用工具](./doc/linux-utilities/README.md)
     - [DD](./doc/linux-utilities/dd.md)
 
-- OS 基础
+- [操作系统](./doc/os/README.md)
