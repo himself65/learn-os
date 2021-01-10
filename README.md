@@ -7,8 +7,8 @@
 ## 目录
 
 - 工具链
-    - C/C++ 工具链
-    - Rust 工具链
+    - [C/C++ 工具链](./doc/gnu-toolchain/README.md)
+    - Rust 工具链 (TODO)
 
 - Linux 实用工具
 
