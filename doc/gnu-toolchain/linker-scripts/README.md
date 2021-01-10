@@ -2,7 +2,7 @@
 
 ## 基本概念
 
-![Compilation Process](../../images/compilation-process.jpg)
+![Compilation Process](../../../images/compilation-process.jpg)
 
 `linker` 组合一系列的输入文件到单个的输出文件。输出文件和每个输入文件称为 `对象(object)` 文件。
 
