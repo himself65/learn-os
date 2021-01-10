@@ -8,6 +8,8 @@
 
 - 工具链
     - [C/C++ 工具链](./doc/gnu-toolchain/README.md)
+        - [Makefile](./doc/gnu-toolchain/makefile/README.md)
+        - [Linker Scripts](./doc/gnu-toolchain/linker-scripts/README.md)
     - Rust 工具链 (TODO)
 
 - Linux 实用工具
