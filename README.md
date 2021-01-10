@@ -12,6 +12,7 @@
         - [Linker Scripts](./doc/gnu-toolchain/linker-scripts/README.md)
     - Rust 工具链 (TODO)
 
-- Linux 实用工具
+- [Linux 实用工具](./doc/linux-utilities/README.md)
+    - [DD](./doc/linux-utilities/dd.md)
 
 - OS 基础
