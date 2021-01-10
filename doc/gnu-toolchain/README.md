@@ -14,6 +14,8 @@
 
 ### `LD` 连接器
 
+转到 [linker script教程](./linker-scripts/README.md)
+
 ### `NM` 显示文件符号
 
 ### `OBJCOPY` 复制文件
