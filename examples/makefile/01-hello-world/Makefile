@@ -6,3 +6,6 @@ all: echo
 
 echo:
 	echo Hello, world!
+
+clean:
+	rm target

@@ -1,9 +1,19 @@
 CC			:= gcc
-EXAMPLE-DIR	:= ./examples
+EXAMPLE-DIR	:= $(CURDIR)/examples
 DIRS		:= \
-	$(EXAMPLE-DIR)/makefile/01-hello-world
+	$(EXAMPLE-DIR)/makefile/01-hello-world \
+	$(EXAMPLE-DIR)/makefile/02-variable
 
 all: test-example
 
 test-example:
-	$(foreach DIR,$(DIRS), @cd $(DIR); make)
+	for DIR in $(DIRS) ; do	\
+		cd $$DIR;			\
+		make;				\
+	done
+
+clean:
+	for DIR in $(DIRS) ; do	\
+		cd $$DIR;			\
+		make clean;			\
+	done

@@ -1,3 +1,5 @@
+all: target
+#
 a = 1
 b = 2
 
@@ -33,3 +35,6 @@ TARGET	= target.o
 # make target TARGET=target.out
 target:
 	$(CC) $(CFLAGS) -o $(TARGET) $(ENTRY)
+
+clean:
+	rm $(TARGET)
