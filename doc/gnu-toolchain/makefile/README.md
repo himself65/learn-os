@@ -1,6 +1,10 @@
 # Makefile
 
-> Makefile学习笔记
+## 目录
+
+[Hello, World](../../../examples/makefile/01-hello-world/README.md)
+
+[变量](../../../examples/makefile/02-variable/README.md)
 
 ## [自动变量]
 
