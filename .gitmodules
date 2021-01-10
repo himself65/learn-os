@@ -1,3 +1,6 @@
 [submodule "deps/edk2"]
 	path = deps/edk2
 	url = https://github.com/tianocore/edk2.git
+[submodule "deps/uefi-ntfs"]
+	path = deps/uefi-ntfs
+	url = https://github.com/pbatard/uefi-ntfs.git
