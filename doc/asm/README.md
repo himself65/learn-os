@@ -82,3 +82,7 @@ add eax, 6  ; 将 6 与 eax 寄存器的内容相加，结果保存在其中
 [`GOASM`]: http://www.godevtool.com/
 
 [Kathleen Booth]: https://en.wikipedia.org/wiki/Kathleen_Booth
+
+[`Rosetta 2`]: https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment
+
+[`QEMU`]: https://www.qemu.org/
