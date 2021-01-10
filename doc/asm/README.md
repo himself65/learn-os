@@ -36,7 +36,7 @@ Now, turn on the GDB
 
 > reference: https://stackoverflow.com/questions/14242958/debugging-bootloader-with-gdb-in-qemu
 
-```powershell
+```ps1
 PS C:\Users\Himself65> gdb
 (gdb) target remote localhost:1234
 (gdb)set architecture i8086
