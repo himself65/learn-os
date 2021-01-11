@@ -10,3 +10,6 @@ cmake-build-*
 target
 out
 target.out
+
+# node.js
+node_modules

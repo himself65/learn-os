@@ -4,11 +4,17 @@
 
 ## 1.1 前言
 
-本章节着重讲解 [`NASM`] (Netwide Assembler)。当然，这个世界上还有很多其他汇编语言编译器（[`MASM`]、[`FASM`]、[`GOASM`]）。但 [`NASM`] 可能是支持最广的 `x86` 编译器了：从 `16位` 到 `64位`、从 `Linux` 到 `Windows`。另外，[`NASM`] 使用 `Intel` 汇编语法<sup>[有什么区别？](../../references/asm-intel-vs-att-syntax.md)</sup>。
+本章节着重讲解 [`NASM`] (Netwide Assembler)。
+当然，这个世界上还有很多其他汇编语言编译器（[`MASM`]、[`FASM`]、[`GOASM`]）。
+但 [`NASM`] 可能是支持最广的 `x86` 编译器了：从 `16位` 到 `64位`、从 `Linux` 到 `Windows`。
+另外，[`NASM`] 使用 `Intel` 汇编语法
+<sup>[有什么区别？](../../references/asm-intel-vs-att-syntax.md)</sup>。
 
 ## 1.2 如何安装 [`NASM`]？
 
-打开 [`NASM`] 官网，打开 [**download**](https://www.nasm.us/pub/nasm/releasebuilds) 一栏即可找到各种版本的二进制文件，本章节采用 `NASM v2.15.05` 版本。
+打开 [`NASM`] 官网，打开
+[**download**](https://www.nasm.us/pub/nasm/releasebuilds)
+一栏即可找到各种版本的二进制文件，本章节采用 `NASM v2.15.05` 版本。
 
 因为 `NASM` 没有发布 `.deb` 预编译版本，`apt` 上的版本更新不及时，版本总是慢一拍，所以我们自己编译安装 `nasm`。
 
@@ -54,7 +60,10 @@ NASM version 2.15.05 compiled on Jan 10 2021
 
 ## 1.3 什么是汇编语言（Assembly language）？
 
-正如任何高级语言，例如 `JavaScript`、`C++`，甚至是 `C` 语言，汇编语言起初也是也是为了方便程序员编程（现在不是了）。因为 `可存储式电子计算机` 的发明而被 [Kathleen Booth] 的 [文章](http://mt-archive.info/Booth-1947.pdf) 中首次引入。其表示了二进制数据与人类可阅读的符号一种映射关系。
+正如任何高级语言，例如 `JavaScript`、`C++`，甚至是 `C` 语言，汇编语言起初也是也是为了方便程序员编程（现在不是了）。
+因为 `可存储式电子计算机` 的发明而被 [Kathleen Booth] 的
+[文章](http://mt-archive.info/Booth-1947.pdf) 中首次引入。
+其表示了二进制数据与人类可阅读的符号一种映射关系。
 
 ![Kathleen Booth 于1947年的文章中首次引入汇编语言的概念](../../images/booth-1947.png)
 

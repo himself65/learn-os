@@ -26,7 +26,8 @@ qemu-system-x86_64 --drive file=1.bin,index=0,media=disk,format=raw -m 512
 
 ## Debug using `GDB`
 
-Firstly, you need start you qemu with hanging, `-S` meaning to 'freeze CPU at start up'
+Firstly, you need start you qemu with hanging,
+`-S` meaning to 'freeze CPU at start up'.
 
 ```bash
 qemu-system-x86_64 -s -S -hda ./1.bin -nographic
@@ -34,7 +35,7 @@ qemu-system-x86_64 -s -S -hda ./1.bin -nographic
 
 Now, turn on the GDB
 
-> reference: https://stackoverflow.com/questions/14242958/debugging-bootloader-with-gdb-in-qemu
+> reference: <https://stackoverflow.com/questions/14242958/debugging-bootloader-with-gdb-in-qemu>
 
 ```ps1
 PS C:\Users\Himself65> gdb

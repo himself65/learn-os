@@ -4,7 +4,7 @@
 
 历史上，`UNIX` 运行在 `PDP-11` 上（一款 `DEC` 公司发售的十六位电脑），其用了一套非常简单的指令集。几乎每个指令都只有两个操作数，每个操作数可以具有以下八个寻址模式之一。如下：
 
-```
+```text
 0n  Rn        register
 1n  (Rn)      deferred
 2n  (Rn)+     autoincrement
@@ -17,16 +17,19 @@
 
 通过一些巧妙的方式，在 `R7` 程序计数器（program counter）上重新使用某些寻址模式，可以对立即数和直接地址进行编码。
 
-```
+```text
 27  #imm      immediate
 37  @#imm     absolute
 67  addr      relative
 77  @addr     relative deferred
 ```
 
-因为 `UNIX` 的 `tty` 驱动<sup>[这是什么？](https://www.oreilly.com/library/view/linux-device-drivers/0596005903/ch18.html)</sup>使用 `@` 和 `#` 当作控制字符，所以 `$` 取代了 `#`，`*` 取代了 `@`。
+因为 `UNIX` 的 `tty` 驱动
+<sup>[这是什么？](https://www.oreilly.com/library/view/linux-device-drivers/0596005903/ch18.html)</sup>
+使用 `@` 和 `#` 当作控制字符，所以 `$` 取代了 `#`，`*` 取代了 `@`。
 
-`PDP-11` 指令中的第一个操作数指的是源操作数，而第二个操作数指的是目的操作数。这一点在汇编语言的操作数顺序中得到了体现，即先源后目的。例如，操作码：`011273`，意思是 `mov (R2),R3`，指将R2指向的内容移至R3。
+`PDP-11` 指令中的第一个操作数指的是源操作数，而第二个操作数指的是目的操作数。
+这一点在汇编语言的操作数顺序中得到了体现，即先源后目的。例如，操作码：`011273`，意思是 `mov (R2),R3`，指将R2指向的内容移至R3。
 
 ## 主要区别
 
@@ -44,7 +47,8 @@ movl $4, %eax
 mov eax, 4
 ```
 
-取址方式，`AT&T` 语法是 `offset(base, index, width)`，而 `Intel` 语法是 `[Index * WIDTH + BASE + OFFSET]` 方式
+取址方式，`AT&T` 语法是 `offset(base, index, width)`。
+而 `Intel` 语法是 `[Index * WIDTH + BASE + OFFSET]` 方式
 
 ```m68k
 movb (%ebx, %esi, 1), %al

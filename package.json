@@ -1,0 +1,14 @@
+{
+  "name": "learn-os",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Himself65/learn-os.git",
+  "author": "himself65 <himself65@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "markdownlint **/*.md --ignore deps --ignore node_modules"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "latest"
+  }
+}

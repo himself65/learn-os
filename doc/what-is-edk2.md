@@ -1,6 +1,7 @@
 # What's edk2
 
-> EDK2 is a modern, feature-rich, cross-platform firmware development environment for the UEFI and PI specifications from www.uefi.org.
+> EDK2 is a modern, feature-rich, cross-platform firmware development environment
+> for the UEFI and PI specifications from www.uefi.org.
 
 ## How to build
 
@@ -19,12 +20,13 @@ build
 
 ## Where is output
 
-In this project, edk2 output files are in the `deps/edk2/Build/OvmfX64/DEBUG_GCC5/FV` directory.
+In this project,
+edk2 output files are in the `deps/edk2/Build/OvmfX64/DEBUG_GCC5/FV` directory.
 
 You can also find `OVMF.fd`, `OVMF_CODE.fd`, `OVMF_VARS.fd`, which we use these later.
 
 ## References
 
-https://wiki.ubuntu.com/UEFI/EDK2
+<https://wiki.ubuntu.com/UEFI/EDK2>
 
-https://askubuntu.com/questions/204093/where-can-i-find-the-build-command-needed-to-build-the-environment-for-edk-2
+<https://askubuntu.com/questions/204093/where-can-i-find-the-build-command-needed-to-build-the-environment-for-edk-2>

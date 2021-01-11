@@ -2,7 +2,7 @@
 
 ## 基础
 
-### UEFI 系统表 
+### UEFI 系统表
 
 ### Memory（内存）
 
@@ -27,6 +27,7 @@
 **提示**：在访问分配的缓冲区之前，请务必要检查函数的返回状态，确定内存分配请求是否成功。
 
 例：
+
 ```c
 #include <Uefi.h>
 #include <Library/UefiBootServicesTableLib.h>

@@ -1,6 +1,6 @@
 # GNU Toolchain
 
-# GNU make
+## GNU make
 
 转到 [Makefile教程](./makefile)
 
