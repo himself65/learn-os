@@ -34,7 +34,7 @@
 
 `AT&T` 语法先写源操作数，Intel 语法先写目标操作数。
 
-```asm
+```m68k
 # AT&T syntax
 movl $4, %eax
 ```
@@ -46,7 +46,7 @@ mov eax, 4
 
 取址方式，`AT&T` 语法是 `offset(base, index, width)`，而 `Intel` 语法是 `[Index * WIDTH + BASE + OFFSET]` 方式
 
-```
+```m68k
 movb (%ebx, %esi, 1), %al
 ```
 
