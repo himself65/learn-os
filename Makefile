@@ -2,7 +2,8 @@ CC			:= gcc
 EXAMPLE-DIR	:= $(CURDIR)/examples
 DIRS		:= \
 	$(EXAMPLE-DIR)/makefile/01-hello-world \
-	$(EXAMPLE-DIR)/makefile/02-variable
+	$(EXAMPLE-DIR)/makefile/02-variable \
+	$(EXAMPLE-DIR)/asm/01
 
 all: test-example
 
