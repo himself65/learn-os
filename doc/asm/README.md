@@ -4,7 +4,7 @@
 
 ## 1.1 前言
 
-本章节着重讲解 [`NASM`] (Netwide Assembler)。当然，这个世界上还有很多其他汇编语言编译器（[`MASM`]、[`FASM`]、[`GOASM`]）。但 [`NASM`] 可能是支持最广的 `x86` 编译器了：从 `16位` 到 `64位`、从 `Linux` 到 `Windows`。另外，[`NASM`] 使用 `Intel` 汇编语法。
+本章节着重讲解 [`NASM`] (Netwide Assembler)。当然，这个世界上还有很多其他汇编语言编译器（[`MASM`]、[`FASM`]、[`GOASM`]）。但 [`NASM`] 可能是支持最广的 `x86` 编译器了：从 `16位` 到 `64位`、从 `Linux` 到 `Windows`。另外，[`NASM`] 使用 `Intel` 汇编语法<sup>[有什么区别？](../../references/asm-intel-vs-att-syntax.md)</sup>。
 
 ## 1.2 如何安装 [`NASM`]？
 
