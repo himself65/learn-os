@@ -81,6 +81,8 @@ add eax, 6  ; 将 6 与 eax 寄存器的内容相加，结果保存在其中
 
 ![NASM代码文件在 VS Code 下的高亮](../../images/vscode-nasm-highlight.png)
 
+[`MASM`]: https://docs.microsoft.com/en-us/cpp/assembler/masm/masm-for-x64-ml64-exe?view=msvc-160
+
 [`NASM`]: https://www.nasm.us/
 
 [`FASM`]: https://flatassembler.net/
