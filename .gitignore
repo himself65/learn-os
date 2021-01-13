@@ -1,6 +1,7 @@
 *.img
 *.fd
 *.o
+*.out
 *.efi
 *.elf
 a.out
