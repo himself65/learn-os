@@ -4,7 +4,9 @@
 
 ![Compilation Process](../../../images/compilation-process.jpg)
 
-`linker` 组合一系列的输入文件到单个的输出文件。输出文件和每个输入文件称为 `对象(object)` 文件。
+`linker`
+<sup>[为什么叫 `ld` ？](../../../references/why-gnu-linker-named-ld.md)</sup>
+（链接器） 组合一系列的输入文件到单个的输出文件。输出文件和每个输入文件称为 `对象(object)` 文件。
 
 输出文件通常成为 `可执行文件(executable)`，但我们还称其为 `object` 文件。
 除其他东西外，每个 `object` 文件都有一系列的 `段(sections)`。
