@@ -10,5 +10,6 @@
 | 书名 | ISBN | 进度 |
 | ---- | ---- | ---- |
 | 程序员的自我修养：链接、装载与库 | 978-7-121-08511-6 | [阅读中](./978-7-121-08511-6/README.md) |
+| Linker and Loaders | 978-1-558-60496-4 | [阅读中](./978-1-558-60496-4/README.md) |
 
 [\[1\]]: https://discover.hsp.org/Record/dc-9792/Description#tabnav
