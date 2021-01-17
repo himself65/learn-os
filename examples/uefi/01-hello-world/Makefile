@@ -1,3 +1,5 @@
+all: kernel
+
 kernel:
 	@gcc -ffreestanding -fpic -fno-stack-protector -fshort-wchar -mno-red-zone -mgeneral-regs-only -mabi=ms -Wall -Wextra -Wpedantic -O3 -o main64.o -c src/main.c
 	@gcc -nostdlib -shared -Wl,-T,src/linker.ld,--build-id=none -Wl,-Bsymbolic -Wl,-znocombreloc -o kernel_x64.elf main64.o -lgcc
