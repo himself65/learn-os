@@ -53,3 +53,11 @@ DISTRIB_DESCRIPTION="Ubuntu 20.04.1 LTS"
 
 - 其他
   - [读书笔记](./note/README.md)
+
+## 协议
+
+[![知识共享许可协议](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](LICENSE)
+
+本作品采用
+[知识共享署名-相同方式共享 4.0 国际许可协议](LICENSE)
+进行许可。
