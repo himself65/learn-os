@@ -48,6 +48,8 @@ DISTRIB_DESCRIPTION="Ubuntu 20.04.1 LTS"
     - [DD](./doc/linux-utilities/dd.md)
 
 - [操作系统](./doc/os/README.md)
+  - 启动
+    - [`UEFI`](./doc/os/uefi/README.md)
 
 - 其他
   - [读书笔记](./note/README.md)
