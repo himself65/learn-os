@@ -18,3 +18,15 @@
 
 目前有两种 `EFI` 应用程序构建方式，`GNU-EFI`（GNU社区为了将 `GNU Toolchain` 兼容到 `ELF` 开发而创建的项目）。
 而另外一种是由 `TianoCore` 社区维护的官方项目。
+
+本系列介绍两种构建方式，本项目非特殊说明以 `EDK2` 为主。
+
+### `GNU-ELF`
+
+### `EDK2`
+
+## 推荐资源
+
+英特尔 `UEFI` 的技术支持页面：<https://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html>
+
+`osdev` 上 `UEFI` 页面：<https://wiki.osdev.org/UEFI>
