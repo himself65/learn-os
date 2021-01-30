@@ -1,5 +1,8 @@
 %include "../linux64.inc"
 
+section .data
+    _lf db 0ah, 00h
+
 section .rodata
     texta db "Argument(s): ",0
     textb1 db "Argument #",0
@@ -16,26 +19,58 @@ _start:
     mov rax, 0
     mov [argPos], rax
 
-    print texta
-    pop rax
-    mov [argc], rax
-    printVal rax
-    print newline
+    pop rcx ; get argc
+next_arg:
+    cmp rcx, 0  ; if argc == 0
+    jz exit_program
+    pop rsi ; rsi = argv[i]
 
-_printArgsLoop:
-    print textb1
-    mov rax, [argPos]
-    inc rax
-    mov [argPos], rax
-    printVal rax
-    print textb2
-    pop rax
-    print rax
-    print newline
-
-    mov rax, [argPos]
-    mov rbx, [argc]
-    cmp rax, rbx
-    jne _printArgsLoop
-
+    call putslf   ; print(rsi)
+    dec rcx ; argc--
+    jmp next_arg
+    
+exit_program:
     exit
+
+; function definitions
+
+putslf:
+    call puts
+    push rsi
+    mov rsi, _lf
+    call puts
+    pop rsi
+    ret
+
+puts:
+    push rcx
+    push rdx
+    push rax
+    push rdi
+
+    mov rdx, rsi
+    call strlen
+
+    mov rax, SYS_WRITE
+    mov rdi, STDOUT
+
+    syscall
+
+    pop rdi
+    pop rax
+    pop rdx
+    pop rcx
+    ret
+
+strlen:
+    push rsi,
+    mov rsi, rdx
+strlen_next:
+    cmp byte [rdx], 0
+    jz strlen_done
+    inc rdx
+    jmp strlen_next
+strlen_done:
+    sub rdx, rsi
+    pop rsi
+    ret
